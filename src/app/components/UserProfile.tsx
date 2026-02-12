@@ -26,6 +26,7 @@ export function UserProfile() {
     bio: 'Passionate learner and teacher. I love connecting with people and sharing knowledge. Always excited to learn something new!',
   };
 
+<<<<<<< HEAD
   const handleEditProfile = () => {
     alert('Edit profile functionality - will open profile editing form');
   };
@@ -34,6 +35,8 @@ export function UserProfile() {
     alert(`Opening messages for: ${skillTitle}`);
   };
 
+=======
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
   const skillsOffered = [
     {
       title: 'Web Design Fundamentals',
@@ -107,11 +110,15 @@ export function UserProfile() {
                       </div>
                     </div>
                   </div>
+<<<<<<< HEAD
                   <Button 
                     variant="outline" 
                     className="gap-2"
                     onClick={handleEditProfile}
                   >
+=======
+                  <Button variant="outline" className="gap-2">
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                     <Settings className="h-4 w-4" />
                     Edit Profile
                   </Button>
@@ -183,10 +190,14 @@ export function UserProfile() {
                       </div>
                     </div>
 
+<<<<<<< HEAD
                     <Button 
                       variant="outline"
                       onClick={() => handleViewMessages(skill.title)}
                     >
+=======
+                    <Button variant="outline">
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                       <MessageCircle className="h-4 w-4 mr-2" />
                       Messages
                     </Button>
@@ -269,4 +280,8 @@ export function UserProfile() {
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46

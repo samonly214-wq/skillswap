@@ -24,6 +24,7 @@ interface SkillDetailProps {
 export function SkillDetail({ skillId, onNavigate }: SkillDetailProps) {
   const skill = mockSkills.find((s) => s.id === skillId);
 
+<<<<<<< HEAD
   const handleProposeSwap = () => {
     alert(`Proposing swap for "${skill?.title}". This will open a message dialog to contact the teacher.`);
   };
@@ -44,6 +45,8 @@ export function SkillDetail({ skillId, onNavigate }: SkillDetailProps) {
     }
   };
 
+=======
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
   if (!skill) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -216,19 +219,26 @@ export function SkillDetail({ skillId, onNavigate }: SkillDetailProps) {
 
                 <div className="space-y-3">
                   <Button
+<<<<<<< HEAD
                     onClick={handleProposeSwap}
+=======
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                     className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
                     size="lg"
                   >
                     <MessageCircle className="mr-2 h-5 w-5" />
                     Propose a Swap
                   </Button>
+<<<<<<< HEAD
                   <Button 
                     variant="outline" 
                     className="w-full" 
                     size="lg"
                     onClick={handleScheduleCall}
                   >
+=======
+                  <Button variant="outline" className="w-full" size="lg">
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                     <Calendar className="mr-2 h-5 w-5" />
                     Schedule Call
                   </Button>
@@ -247,11 +257,15 @@ export function SkillDetail({ skillId, onNavigate }: SkillDetailProps) {
                 <p className="text-sm text-gray-600 mb-4">
                   Know someone who might be interested?
                 </p>
+<<<<<<< HEAD
                 <Button 
                   variant="outline" 
                   className="w-full"
                   onClick={handleShareSkill}
                 >
+=======
+                <Button variant="outline" className="w-full">
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                   Share with Friends
                 </Button>
               </Card>
@@ -261,4 +275,8 @@ export function SkillDetail({ skillId, onNavigate }: SkillDetailProps) {
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46

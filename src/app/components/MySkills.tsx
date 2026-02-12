@@ -19,8 +19,13 @@ import { categories } from '@/data/mockData';
 
 export function MySkills() {
   const [showAddForm, setShowAddForm] = useState(false);
+<<<<<<< HEAD
   const [showWishlistForm, setShowWishlistForm] = useState(false);
   const [offeredSkills, setOfferedSkills] = useState([
+=======
+
+  const myOfferedSkills = [
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
     {
       id: '1',
       title: 'Web Design Fundamentals',
@@ -30,6 +35,7 @@ export function MySkills() {
       description: 'Teaching the basics of modern web design using Figma and HTML/CSS',
       lookingFor: ['Photography', 'Spanish Language'],
     },
+<<<<<<< HEAD
   ]);
 
   const [wantedSkills, setWantedSkills] = useState([
@@ -63,6 +69,15 @@ export function MySkills() {
       alert('Add to wishlist functionality - will search and add skills');
     }
   };
+=======
+  ];
+
+  const myWantedSkills = [
+    { title: 'Photography Basics', category: 'Photography' },
+    { title: 'Spanish Conversation', category: 'Languages' },
+    { title: 'Guitar for Beginners', category: 'Music' },
+  ];
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
@@ -107,7 +122,11 @@ export function MySkills() {
                 </motion.div>
 
                 <div className="grid md:grid-cols-2 gap-6">
+<<<<<<< HEAD
                   {offeredSkills.map((skill, index) => (
+=======
+                  {myOfferedSkills.map((skill, index) => (
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                     <motion.div
                       key={skill.id}
                       initial={{ opacity: 0, y: 20 }}
@@ -118,6 +137,7 @@ export function MySkills() {
                         <div className="flex items-start justify-between mb-4">
                           <Badge>{skill.category}</Badge>
                           <div className="flex gap-2">
+<<<<<<< HEAD
                             <Button 
                               variant="ghost" 
                               size="sm"
@@ -133,6 +153,12 @@ export function MySkills() {
                               onClick={() => handleDeleteOfferedSkill(skill.id)}
                               title="Delete skill"
                             >
+=======
+                            <Button variant="ghost" size="sm">
+                              <Edit2 className="h-4 w-4" />
+                            </Button>
+                            <Button variant="ghost" size="sm" className="text-red-600">
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                               <Trash2 className="h-4 w-4" />
                             </Button>
                           </div>
@@ -239,10 +265,14 @@ export function MySkills() {
                     </div>
 
                     <div className="flex gap-3 pt-4">
+<<<<<<< HEAD
                       <Button 
                         onClick={handlePublishSkill}
                         className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
                       >
+=======
+                      <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                         Publish Skill
                       </Button>
                       <Button variant="outline" onClick={() => setShowAddForm(false)}>
@@ -262,19 +292,29 @@ export function MySkills() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
             >
+<<<<<<< HEAD
               <Button 
                 onClick={handleAddToWishlist}
                 className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
               >
+=======
+              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                 <Plus className="mr-2 h-4 w-4" />
                 Add Skill to Wishlist
               </Button>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-4">
+<<<<<<< HEAD
               {wantedSkills.map((skill, index) => (
                 <motion.div
                   key={skill.id}
+=======
+              {myWantedSkills.map((skill, index) => (
+                <motion.div
+                  key={index}
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
@@ -282,6 +322,7 @@ export function MySkills() {
                   <Card className="p-4 hover:shadow-lg transition-shadow">
                     <div className="flex items-start justify-between mb-3">
                       <Badge variant="outline">{skill.category}</Badge>
+<<<<<<< HEAD
                       <Button 
                         variant="ghost" 
                         size="sm" 
@@ -289,16 +330,23 @@ export function MySkills() {
                         onClick={() => handleDeleteWantedSkill(skill.id)}
                         title="Remove from wishlist"
                       >
+=======
+                      <Button variant="ghost" size="sm" className="text-red-600 -mt-2">
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                         <Trash2 className="h-4 w-4" />
                       </Button>
                     </div>
                     <h3 className="font-semibold mb-2">{skill.title}</h3>
+<<<<<<< HEAD
                     <Button 
                       variant="outline" 
                       size="sm" 
                       className="w-full mt-2"
                       onClick={() => alert('Searching for teachers with this skill...')}
                     >
+=======
+                    <Button variant="outline" size="sm" className="w-full mt-2">
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                       Find Teachers
                     </Button>
                   </Card>
@@ -315,11 +363,15 @@ export function MySkills() {
                     The more skills you offer, the easier it is to find matches! Teachers often
                     look for learners with specific skills to exchange.
                   </p>
+<<<<<<< HEAD
                   <Button 
                     variant="outline" 
                     size="sm"
                     onClick={() => setShowAddForm(true)}
                   >
+=======
+                  <Button variant="outline" size="sm">
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
                     Add a Skill to Offer
                   </Button>
                 </div>
@@ -330,4 +382,8 @@ export function MySkills() {
       </div>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46

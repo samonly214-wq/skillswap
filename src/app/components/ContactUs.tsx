@@ -29,14 +29,22 @@ export function ContactUs({ onNavigate }: ContactUsProps) {
   const contactMethods = [
     {
       icon: Mail,
+<<<<<<< HEAD
       title: 'Email Us',
       description: 'Get response within 24 hours',
       value: 'samonly214@gmail.com',
       action: 'mailto:samonly214@gmail.com',
+=======
+      title: 'Email Support',
+      value: 'support@skillswap.com',
+      description: 'Get a response within 24 hours',
+      color: 'from-purple-500 to-purple-600',
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
     },
     {
       icon: MessageCircle,
       title: 'Live Chat',
+<<<<<<< HEAD
       description: 'Available Mon-Fri, 9am-5pm',
       value: 'Start Chat',
       action: '#',
@@ -47,6 +55,18 @@ export function ContactUs({ onNavigate }: ContactUsProps) {
       description: 'Speak with our team',
       value: '+250 796 324 907',
       action: 'tel:+250796324907',
+=======
+      value: 'Available 24/7',
+      description: 'Instant help from our support team',
+      color: 'from-blue-500 to-blue-600',
+    },
+    {
+      icon: Phone,
+      title: 'Phone Support',
+      value: '+1 (555) 123-4567',
+      description: 'Mon-Fri, 9AM-6PM PST',
+      color: 'from-green-500 to-green-600',
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
     },
   ];
 
@@ -310,4 +330,8 @@ export function ContactUs({ onNavigate }: ContactUsProps) {
       </section>
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46

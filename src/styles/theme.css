@@ -178,6 +178,7 @@
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
   }
+<<<<<<< HEAD
 
   /* Custom animations for better UX */
   @keyframes fadeIn {
@@ -297,3 +298,6 @@
     color: #9333ea;
   }
 }
+=======
+}
+>>>>>>> 352704d7903ceb46c2cb0381f70cd25215c64f46
